@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    cursor: pointer;
+    background-image: url('background_LandingPage.jpg'); /* Set your background image */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed background image */
+    background-position: center;
+    background-size: cover; /* Cover the entire viewport */
+}
+        .landing-content {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-content">
+        <h1>Welcome to My Landing Page</h1>
+    </div>
+
+    <script>
+        // Event listener for click and parallax effect
+        document.body.addEventListener("click", function() {
+            window.location.href = "next-page.html";
+        });
+    
+        document.addEventListener("mousemove", function(event) {
+            const centerX = window.innerWidth / 2;
+            const centerY = window.innerHeight / 2;
+            const moveX = (centerX - event.clientX) / 30; // Reverse the direction by subtracting
+            const moveY = (centerY - event.clientY) / 30; // Reverse the direction by subtracting
+    
+            document.body.style.backgroundPositionX = `${moveX}px`;
+            document.body.style.backgroundPositionY = `${moveY}px`;
+        });
+    </script>
+</body>
+</html>
