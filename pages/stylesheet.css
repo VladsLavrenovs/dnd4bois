@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the sidebar */
+.sidebar {
+    width: 100px; /* Adjust the width as needed */
+    height: 100%; /* Make it cover the full height of the viewport */
+    background-color: #333; /* Background color for the sidebar */
+    color: #fff; /* Text color for the sidebar */
+    position: fixed; /* Fix the sidebar in place */
+    top: 0;
+    left: 0;
+}
+
+/* Style the menu within the sidebar */
+.menu {
+    padding: 10px; /* Add padding for spacing */
+}
+
+/* Style the buttons and icons within the menu */
+.button {
+    margin-bottom: 10px; /* Add margin between buttons */
+    cursor: pointer; /* Change the cursor on hover to indicate interactivity */
+}
+
+.icon {
+    width: 80px; /* Set the width of the icon */
+    height: 80px; /* Set the height of the icon */
+    background-size: cover; /* Scale the background image to cover the entire icon */
+    background-position: center; /* Center the background image within the icon */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    border-radius: 50%;
+}
+.icon:hover {
+    transform: scale(1.2); /* Increase size on hover */
+    opacity: 1; /* Full opacity on hover */
+}
+.icon:not(:hover) {
+    transform: scale(0.8); /* Decrease size on non-hovered icons */
+    opacity: 0.5; /* Reduce opacity on non-hovered icons */
+}
+/* Style the main content area */
+.content {
+    margin-left: 200px; /* Match the width of the sidebar to create space for the content */
+    padding: 20px; /* Add padding for spacing */
+}
