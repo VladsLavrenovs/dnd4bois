@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        #menu {
+            width: 200px;
+            background-image: url(../backgrounds/background_LandingPage.jpg);
+            color: #fff;
+            padding: 20px;
+        }
+
+        #menu .button {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #menu .button:hover {
+            background: #444;
+        }
+
+        #menu .icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #fff;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <div class="button" onclick="loadContent(1)">
+            <div class="icon">A</div> 
+        </div>
+        <div class="button" onclick="loadContent(2)">
+            <div class="icon">B</div> 
+        </div>
+        <div class="button" onclick="loadContent(3)">
+            <div class="icon">C</div> 
+        </div>
+        <div class="button" onclick="loadContent(4)">
+            <div class="icon">D</div> 
+        </div>
+        <div class="button" onclick="loadContent(5)">
+            <div class="icon">E</div> 
+        </div>
+    </div>
+    <div id="content">
+        <p>Welcome to Your Page</p>
+    </div>
+
+    <script>
+        function loadContent(menuItem) {
+            const content = document.getElementById('content');
+            switch (menuItem) {
+                case 1:
+                    content.innerHTML = "<h2>Content 1</h2><p>This is the content for Menu Item 1.</p>";
+                    break;
+                case 2:
+                    content.innerHTML = "<h2>Content 2</h2><p>This is the content for Menu Item 2.</p>";
+                    break;
+                case 3:
+                    content.innerHTML = "<h2>Content 3</h2><p>This is the content for Menu Item 3.</p>";
+                    break;
+                case 4:
+                    content.innerHTML = "<h2>Content 4</h2><p>This is the content for Menu Item 4.</p>";
+                    break;
+                case 5:
+                    content.innerHTML = "<h2>Content 5</h2><p>This is the content for Menu Item 5.</p>";
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
