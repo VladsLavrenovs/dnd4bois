@@ -12,11 +12,13 @@ body, html {
     position: fixed; /* Fix the sidebar in place */
     top: 0;
     left: 0;
+    opacity: 100%;
 }
 
 /* Style the menu within the sidebar */
 .menu {
     padding: 10px; /* Add padding for spacing */
+    
 }
 
 /* Style the buttons and icons within the menu */
@@ -43,6 +45,23 @@ body, html {
 }
 /* Style the main content area */
 .content {
-    margin-left: 200px; /* Match the width of the sidebar to create space for the content */
+    margin-left: 100px; /* Match the width of the sidebar to create space for the content */
     padding: 20px; /* Add padding for spacing */
+
+}
+.charPage {
+    background-color: rgba(0, 0, 0, 0); /* 50% opacity black */
+    position: relative; /* Needed for z-index positioning */
+    margin-left: 100px;
+}
+.charPageBackground {
+        background-image: url('../backgrounds/charBGpage.jpg');
+        background-size:auto;
+        position: fixed; /* Position it absolutely */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Place it behind the .charPage */
+        margin-left: 100px;
 }

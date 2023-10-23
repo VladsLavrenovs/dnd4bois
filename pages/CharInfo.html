@@ -26,15 +26,20 @@
             </div>
         </div>
 
+        <div class="charPage" id="content">
+            <!-- Content to be displayed over the transparent background -->
+        </div>
+        <div class="charPageBackground"></div>
+
     <script>
         function loadContent(menuItem) {
             const content = document.getElementById('content');
             switch (menuItem) {
                 case 1:
-                    content.innerHTML = "<h2>Content 1</h2><p>This is the content for Menu Item 1.</p>";
+                    content.innerHTML = "<h2>Content 1</h2><p>Гном из жопы Item 1.</p>";
                     break;
                 case 2:
-                    content.innerHTML = "<h2>Content 2</h2><p>This is the content for Menu Item 2.</p>";
+                    content.innerHTML = "<h2>Content 2</h2><p>деда.</p>";
                     break;
                 case 3:
                     content.innerHTML = "<h2>Content 3</h2><p>This is the content for Menu Item 3.</p>";
