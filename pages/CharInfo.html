@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
     <title>Игроки</title>
 </head>
 <body>
+    <div calss="container">
         <div class="sidebar">
             <div class="menu">
                 <div class="button" onclick="loadContent(1)">
@@ -14,41 +15,41 @@
                     <div class="icon icon-image" style="background-image: url('../players/2/player2.jpg');"></div>
                 </div>
                 <div class="button" onclick="loadContent(3)">
-                    <div class="icon icon-image" style="background-image: url('../players/1/player1.png');"></div>
+                    <div class="icon icon-image" style="background-image: url('../players/3/player3.jpg');"></div>
                 </div>
                 <div class="button" onclick="loadContent(4)">
-                    <div class="icon icon-image" style="background-image: url('../players/1/player1.png');"></div>
+                    <div class="icon icon-image" style="background-image: url('../players/4/player4.jpg');"></div>
                 </div>
                 <div class="button" onclick="loadContent(5)">
-                    <div class="icon icon-image" style="background-image: url('../players/1/player1.png');"></div>
+                    <div class="icon icon-image" style="background-image: url('../players/5/player5.jpg');"></div>
                 </div>
                 <!-- Add more buttons for other players as needed -->
             </div>
         </div>
+        <div class="content" id="content">
 
-        <div class="charPage" id="content">
-            <!-- Content to be displayed over the transparent background -->
-        </div>
-        <div class="charPageBackground"></div>
+
+
+    </div>
 
     <script>
         function loadContent(menuItem) {
             const content = document.getElementById('content');
             switch (menuItem) {
                 case 1:
-                    content.innerHTML = "<h2>Content 1</h2><p>Гном из жопы Item 1.</p>";
+                    content.innerHTML = "Гном из жопы1 ";
                     break;
                 case 2:
-                    content.innerHTML = "<h2>Content 2</h2><p>деда.</p>";
+                    content.innerHTML = "Гном из жопы2 ";
                     break;
                 case 3:
-                    content.innerHTML = "<h2>Content 3</h2><p>This is the content for Menu Item 3.</p>";
+                    content.innerHTML = "Гном из жопы3 ";
                     break;
                 case 4:
-                    content.innerHTML = "<h2>Content 4</h2><p>This is the content for Menu Item 4.</p>";
+                    content.innerHTML = "Гном из жопы4 ";
                     break;
                 case 5:
-                    content.innerHTML = "<h2>Content 5</h2><p>This is the content for Menu Item 5.</p>";
+                    content.innerHTML = "Гном из жопы5 ";
                     break;
             }
         }
